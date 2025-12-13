@@ -207,6 +207,7 @@ flight-delay-bigdata-pipeline/
 
 ## Summary
 
-This project demonstrates a **production-style Big Data architecture** with distributed storage, scalable ingestion, schema validation, database-native analytics, and interactive visualization — all implemented using open-source tools and real-world data.
+This project demonstrates a **production-style Big Data architecture** with distributed storage, scalable ingestion, schema validation, database-native analytics, and interactive visualization, all implemented using open-source tools and real-world data.
+
 
 
