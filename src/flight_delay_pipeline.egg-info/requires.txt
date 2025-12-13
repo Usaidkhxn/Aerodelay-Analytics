@@ -1,0 +1,22 @@
+# ----------------------------
+# Core data & database
+# ----------------------------
+pandas>=2.0
+pymongo>=4.6
+pydantic>=2.5
+python-dateutil
+
+# ----------------------------
+# Visualization & dashboard
+# ----------------------------
+streamlit>=1.28
+plotly>=5.18
+matplotlib>=3.8
+
+# ----------------------------
+# Development & testing
+# ----------------------------
+[dev]
+pytest>=7.4
+mypy>=1.7
+

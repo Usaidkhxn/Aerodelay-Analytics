@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+.env
+*.log
+.DS_Store
+
+# Raw datasets (too large for GitHub)
+data/raw/*.csv
