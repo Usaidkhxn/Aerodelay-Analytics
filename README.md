@@ -1,4 +1,4 @@
-# ✈️ AeroDelay Analytics
+# AeroDelay Analytics
 
 ## Overview
 
@@ -30,14 +30,14 @@ This project demonstrates real-world **Big Data engineering practices**, includi
 
 ---
 
-## 🏗 Architecture & System Design
+## Architecture & System Design
 
 AeroDelay Analytics is deployed as a **distributed Big Data system** using **Docker Compose** and a **MongoDB replica set**.  
 The architecture follows a layered data design to ensure scalability, data quality, and analytics readiness.
 
 ---
 
-### 🔹 Distributed Data Platform
+### Distributed Data Platform
 
 - **Database:** MongoDB 6.0
 - **Deployment:** Docker Compose
@@ -58,7 +58,7 @@ All Raw, Clean, and Gold datasets are stored directly in MongoDB collections.
 
 ---
 
-### 🔹 Processing Layer
+### Processing Layer
 
 The processing layer is implemented in **Python** and executed as independent pipeline stages:
 
@@ -74,7 +74,7 @@ Engineering features:
 
 ---
 
-### 🔹 Visualization Layer
+### Visualization Layer
 
 Analytics-ready datasets from the Gold layer are consumed directly by a **Streamlit dashboard**.
 
@@ -84,7 +84,7 @@ Analytics-ready datasets from the Gold layer are consumed directly by a **Stream
 
 ---
 
-## 📊 Architecture Diagram
+## Architecture Diagram
 
 The diagram below illustrates the full end-to-end data flow and the distributed MongoDB deployment.
 
@@ -92,9 +92,9 @@ The diagram below illustrates the full end-to-end data flow and the distributed 
 
 ---
 
-## 🧱 Pipeline Layers
+## Pipeline Layers
 
-### 1️⃣ Raw Layer (Bronze)
+### 1) Raw Layer (Bronze)
 
 - Ingests CSV data **as-is** into MongoDB
 - Uses **chunked ingestion (100,000 rows per batch)** for scalability
@@ -111,7 +111,7 @@ The diagram below illustrates the full end-to-end data flow and the distributed 
 
 ---
 
-### 2️⃣ Clean Layer (Silver)
+### 2) Clean Layer (Silver)
 
 - Processes a **1.5M representative sample** of flight records
 
@@ -128,7 +128,7 @@ The diagram below illustrates the full end-to-end data flow and the distributed 
 
 ---
 
-### 3️⃣ Aggregated Layer (Gold)
+### 3️) Aggregated Layer (Gold)
 
 Aggregations are computed **directly inside MongoDB** and materialized as collections:
 
@@ -151,7 +151,7 @@ These collections are optimized for dashboard performance.
 
 ---
 
-## 📈 Dashboard
+## Dashboard
 
 - **Tool:** Streamlit
 - **Data Source:** MongoDB Gold-layer collections
@@ -208,6 +208,7 @@ flight-delay-bigdata-pipeline/
 ## Summary
 
 This project demonstrates a **production-style Big Data architecture** with distributed storage, scalable ingestion, schema validation, database-native analytics, and interactive visualization, all implemented using open-source tools and real-world data.
+
 
 
 
