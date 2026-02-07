@@ -7,11 +7,13 @@ The system ingests over **5.8 million flight records**, processes them through s
 
 This project demonstrates real-world **Big Data engineering practices**, including distributed storage, scalable ingestion, schema validation, database-native aggregation, and production-style visualization.
 
+![Airline Reliability Comparison](screenshots/airline-reliability-comparison.png)
+
 ---
 
 ## Dataset
 
-- **Source:** Kaggle – U.S. DOT Flight Delays (2015)
+- **Source:** Kaggle - U.S. DOT Flight Delays (2015)
 - **Link:** https://www.kaggle.com/datasets/usdot/flight-delays
 - **Files Used:**
   - `flights.csv` (~5.8M rows)
@@ -44,9 +46,9 @@ The architecture follows a layered data design to ensure scalability, data quali
 - **Cluster Type:** 3-node **Replica Set**
 
 **Replica Set Configuration:**
-- `mongo1` — Primary
-- `mongo2` — Secondary
-- `mongo3` — Secondary
+- `mongo1` - Primary
+- `mongo2` - Secondary
+- `mongo3` - Secondary
 
 This setup provides:
 - High availability
@@ -162,6 +164,21 @@ These collections are optimized for dashboard performance.
   - Delay vs cancellation tradeoff
   - High-risk airports by delay probability
   - Heatmaps and box plots for delay analysis
+ 
+  ### Dashboard Screenshots
+
+![Flight Volume vs Delay](screenshots/flight-volume-vs-delay.png)
+
+![Arrival Delay Distribution](screenshots/arrival-delay-distribution.png)
+
+![Arrival Delay Severity](screenshots/arrival-delay-severity.png)
+
+![Delay vs Cancellation Tradeoff](screenshots/delay-vs-cancellation-tradeoff.png)
+
+![High-Risk Airports by Delay Probability](screenshots/high-risk-airports-by-delay-probability.png)
+
+![Worst Delay Days](screenshots/worst-delay-days.png)
+
 
 Run locally:
 
@@ -208,6 +225,7 @@ flight-delay-bigdata-pipeline/
 ## Summary
 
 This project demonstrates a **production-style Big Data architecture** with distributed storage, scalable ingestion, schema validation, database-native analytics, and interactive visualization, all implemented using open-source tools and real-world data.
+
 
 
 
